@@ -11,5 +11,18 @@ export default function Cesta () {
 }
 
 const estilos = StyleSheet.create({
-    topo: ()
+    topo: {
+        width: "100%",
+        height: 570/ 768 * width
+},
+    titulo:{
+        widht: "100%",
+        position: "absoute",
+        textAlign: "center",
+        fontSize: 16,
+        lineheight: 26,
+        color: "white",
+        fontweight: 'bold',
+        padding:16
+    }
 })
