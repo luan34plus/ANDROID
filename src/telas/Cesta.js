@@ -31,21 +31,25 @@ const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 570/ 768 * width
-},
+    },
     titulo:{
-        widht: "100%",
+        width: "100%",
         position: "absolute",
         textAlign: "center",
         fontSize: 16,
-        lineheight: 26,
+        lineHeight: 26,
         color: "white",
         fontweight: 'bold',
         padding:16
     },
+    cesta: {
+        paddingVertical: 8,
+        paddingHorizontal: 16
+    },
     nome: {
         color: "#464646",
-        fontsize: 26,
-        lineheight: 42,
+        fontSize: 26,
+        lineHeight: 42,
     },
     fazenda: {
         flexDirection: "row",
@@ -56,9 +60,10 @@ const estilos = StyleSheet.create({
         height: 32
     },
     nomeFazenda:{
-        fonteSize: 16,
+        fontSize: 16,
         lineheight: 26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily:"MontserratRegular"
     },
     descricao: {
         color: "#A3A3A3",
@@ -70,6 +75,7 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 26,
         lineHeight: 42,
-        marginTop: 8
+        marginTop: 8,
+        fontFamily:"MontserratBold"
     }
 })
