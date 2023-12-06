@@ -1,23 +1,23 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 
 import Topo from './components/Topo';
 import Detalhes from './components/Detalhes';
-import Itens from './components/Itens';	
+import Item from './components/Item';	
 import Texto from '../components/Texto';
 
 export default function Cesta({ topo, detalhes, itens }) {
   return <>
   <FlatList
   data={itens.lista}
-  renderItem={item}
+  renderItem={Item}
   keyExtractor={({nome})=> nome}
   ListHeaderComponent={() => {
   return <>
     <Topo {...topo} />
     <View style={estilos.cesta}>
       <Detalhes {...detalhes} />
-      <Texto style={estilos.titulo}>{item.titulo}</Texto>
+      <Texto style={estilos.titulo}>{itens.titulo}</Texto>
     </View>
 </>
 }}
@@ -31,8 +31,8 @@ titulo:{
   fontWeight: "bold",
   marginTop: 32,
   marginBottom: 8,
-  fontsize: 20,
-  linrHeight: 32,
+  fontSize: 20,
+  lineHeight: 32,
 },
   cesta: {
     paddingVertical: 8,
